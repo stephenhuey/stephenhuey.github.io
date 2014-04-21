@@ -99,6 +99,20 @@
 		font-family: Palatino, Garamond;
 		font-size: 200%;
 	}
+	
+	@media (max-device-width: 1200px) {
+		#howdy {
+			-webkit-animation: wobble 3s infinite alternate;
+			-moz-animation: wobble 3s infinite alternate;
+			-o-animation: wobble 3s infinite alternate;
+			-ms-transition: wobble 3s infinite alternate;
+			transition: wobble 3s infinite alternate;
+			margin-top: 2%;
+			color: #C05454;
+			font-family: Palatino, Garamond;
+			font-size: 400%;
+		}
+	}
     
 	@-moz-keyframes wobble {
 		from {
@@ -144,7 +158,7 @@
 <body>
 	<div id="howdy" class="fadein">Howdy</div>
 	<div id="intro" class="fadeout">
-		<div id="close">CLOSE</div>
+		<p id="close">CLOSE</p>
 		<p>If you're looking for the Stephen Charles Huey who grew up in Texas and Nigeria, then you're at the right spot.  Please feel free to connect with me at any of the following:</p>
 		<p>
 			<a href="http://www.linkedin.com/in/stephenhuey/"><image class="logo" src="https://dlc1-s.licdn.com/sites/default/files/InBug-30px-R.png"> LinkedIn</a>
