@@ -1,45 +1,204 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Stephen Charles Huey</title>
-        <style>
-            * { margin: 0; padding: 0; }
+<head>
+	<meta charset="UTF-8">
+	<title>Stephen Charles Huey</title>
+	<style type="text/css">
+	* { margin: 0; padding: 0; }
 
-            html {
-                background: url(images/color_facing_el_capitan_1920.jpg) no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-        </style>
-    </head>
-    <body>
-        <!--
-                My name is Stephen Charles Huey, and I was born in Wharton, Texas.  After living my first few years in El Campo, my family moved to Nigeria
-                where I lived in Ogbomosho, Lagos and Jos.
+	html {
+		background: url(images/color_facing_el_capitan_1920.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+			
+	a {
+		color: #548CC0;
+		text-decoration: none;
+	}
+			
+	a:hover {
+		color: #FF0066;
+	}
+			
+	#intro {
+		width: 25%;	
+		margin-top: 2%;	
+		margin-left: 2%;
+		margin-right: 5%;	
+		padding: 10px;
+		background-color: white;
+		font-family: Helvetica;
+		font-size: 120%;
+		-webkit-transition: opacity 1.5s ease-in;
+		-moz-transition: opacity 1.5s ease-in;
+		-o-transition: opacity 1.5s ease-in;
+		-ms-transition: opacity 1.5s ease-in;
+		transition: opacity 1.5s ease-in;
+	}
+			
+	@media only screen and (min-device-width: 1200px) {
+		#intro {
+			width: 50%;	
+			margin-top: 2%;	
+			margin-left: 2%;
+			margin-right: 5%;	
+			padding: 10px;
+			background-color: white;
+			font-family: Helvetica;
+			font-size: 150%;
+			-webkit-transition: opacity 1.5s ease-in;
+			-moz-transition: opacity 1.5s ease-in;
+			-o-transition: opacity 1.5s ease-in;
+			-ms-transition: opacity 1.5s ease-in;
+			transition: opacity 1.5s ease-in;
+		}
+	} 
+			
+	#intro p {
+		margin-bottom: 20px;
+	}
+			
+	.fadeout {
+		opacity: 0;
+	}
+			
+	.fadein {
+		opacity: 0.6;
+	}
+			
+	.logo {
+		width: 40px;
+		vertical-align: middle; 
+	}
+			
+	#close {
+		margin-bottom: 5%;
+		text-align: right;
+		color: red;
+		font-size: 80%;
+	}
+			
+	#howdy {
+		-webkit-animation: wobble 3s infinite alternate;
+		-moz-animation: wobble 3s infinite alternate;
+		-o-animation: wobble 3s infinite alternate;
+		-ms-transition: wobble 3s infinite alternate;
+		transition: wobble 3s infinite alternate;
+		margin-top: 2%;
+		color: #C05454;
+		font-family: Palatino, Garamond;
+		font-size: 200%;
+	}
+    
+	@-moz-keyframes wobble {
+		from {
+			margin-left:0%;
+		}
+      
+		to {
+			margin-left:10%;
+		}
+	}
+    
+	@-webkit-keyframes wobble {
+		from {
+			margin-left:0%;
+		}
+      
+		to {
+			margin-left:10%;
+		}
+	}
+				
+	@-o-keyframes wobble {
+		from {
+			margin-left:0%;
+		}
+      
+		to {
+			margin-left:10%;
+		}
+	}
+				
+	@-ms-keyframes wobble {
+		from {
+			margin-left:0%;
+		}
+      
+		to {
+			margin-left:10%;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div id="howdy" class="fadein">Howdy</div>
+	<div id="intro" class="fadeout">
+		<div id="close">CLOSE</div>
+		<p>If you're looking for the Stephen Charles Huey who grew up in Texas and Nigeria, then you're at the right spot.  Please feel free to connect with me at any of the following:</p>
+		<p>
+			<a href="http://www.linkedin.com/in/stephenhuey/"><image class="logo" src="https://dlc1-s.licdn.com/sites/default/files/InBug-30px-R.png"> LinkedIn</a>
+			</p>
+			<p>
+				<a href="http://plus.google.com/+StephenHueyGooglePlus"><image class="logo" src="https://developers.google.com/+/images/branding/g+128.png"> Google+</a>
+				</p>
+				<p>
+					<a href="http://twitter.com/stephenhuey"><image class="logo" src="https://g.twimg.com/Twitter_logo_blue.png"> Twitter</a>
+					</p>
+			
+				</div>
+				<!--
+					My name is Stephen Charles Huey, and I was born in Wharton, Texas.  After living my first few years in El Campo, my family moved to Nigeria
+					where I lived in Ogbomosho, Lagos and Jos.  This webpage is using CSS transitions for a bit of fun and everything is in this single HTML file for blazing fast download speed.  
 
-                Thanks to Chris Coyier for his Full Page Background Image techniques which I first used in 2009.
-                As of 2012, I'm using his Awesome, Easy, Progressive CSS3 way seen here:   css-tricks.com/perfect-full-page-background-image/
-        -->
-        <a href="http://twitter.com/stephenhuey" style="text-decoration: none;"><!-- Howdy --></a>
-        <a href="http://linkedin.com/in/stephenhuey" style="text-decoration: none;"><!-- Greetings --></a>
-        <!-- More to come soon enough! -->
-        <script type="text/javascript">
+					Thanks to Chris Coyier for his Full Page Background Image techniques which I first used in 2009.
+					As of 2012, I'm using his Awesome, Easy, Progressive CSS3 way seen here:   css-tricks.com/perfect-full-page-background-image/
+					-->
+					
+					<script type="text/javascript">
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-25836722-1']);
-            _gaq.push(['_setDomainName', 'stephenhuey.com']);
-            _gaq.push(['_trackPageview']);
+					var addListener = function (element, event, callback) {
+						// We define a cross-browser function
+						if (window.addEventListener) {
+							// Mozilla/Webkit/Opera
+							element.addEventListener(event, callback, false);
+						} else {
+							// IE
+							element.attachEvent('on' + event, callback);
+						}
+					};
+		
+					function howdyHandler() {
+						document.getElementById('howdy').style.display = "none";
+						document.getElementById('intro').className = "fadein";
+					}
+			
+					function closeHandler() {
+						document.getElementById('intro').className = "fadeout";
+						setTimeout(function(){
+							document.getElementById('howdy').style.display = "block";
+						}, 1500);
+					}
+			
+					document.addEventListener('DOMContentLoaded', function() {
+						addListener(document.getElementById('howdy'), 'click', howdyHandler);
+						addListener(document.getElementById('close'), 'click', closeHandler);
+					}, false);
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+					var _gaq = _gaq || [];
+					_gaq.push(['_setAccount', 'UA-25836722-1']);
+					_gaq.push(['_setDomainName', 'stephenhuey.com']);
+					_gaq.push(['_trackPageview']);
 
-        </script>
-    </body>
-</html>
-<!-- Localized -->
+					(function() {
+						var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					})();
+
+					</script>
+				</body>
+				</html>
